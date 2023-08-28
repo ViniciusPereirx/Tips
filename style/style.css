@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  height: 30rem;
+  height: 28rem;
   width: 22rem;
   background: var(--secondary-color);
   border-radius: 1.2rem;
