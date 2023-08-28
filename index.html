@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Gorjetas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center p-2 title mt-2">Calcular de Gorjetas</div>
+      <div>
+        <form>
+          <label for="bill" class="mt-2">Qual o valor da conta? </label>
+
+          <div class="input-group mt-1 mb-3">
+            <span class="input-group-text">$</span>
+            <input
+              type="number"
+              class="form-control"
+              id="bill"
+              placeholder="0.00$"
+            />
+          </div>
+
+          <label for="service">Como foi seu serviço?</label>
+
+          <select
+            class="form-select form-select-sm mt-1 mb-4"
+            aria-label="Small select example"
+            name="service"
+            id="service"
+          >
+            <option disabled selected value="0">Escolha uma opção</option>
+            <option value="0.3">30% - Incrível</option>
+            <option value="0.2">20% - Bom</option>
+            <option value="0.15">15% - Aceitável</option>
+            <option value="0.1">10% - Ruim</option>
+            <option value="0.05">5% - Péssimo</option>
+          </select>
+
+          <label for="people">Quantas pessoas vão dividir a conta?</label>
+          <div class="input-group mt-1 mb-2">
+            <span class="input-group-text">Pessoa(s)</span>
+            <input
+              type="number"
+              class="form-control"
+              id="people"
+              placeholder="1"
+            />
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success">Calcular</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
